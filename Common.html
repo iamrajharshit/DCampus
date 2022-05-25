@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="glass">
+        <h1>COMMON SUBJECTS</h1>
+        <ul id="myUL">
+            <li><span class="caret">Departments</span>
+                <ul class="nested">
+                    <li><span class="caret">ENGLISH</span>
+                        <ul class="nested">
+                            <li><span class="caret">Teachers</span>
+                                <ul class="nested">
+                                    <li>T1(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T2(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T3(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T4(name) (Staff Room no Block and Floor no)</li>
+                                </ul>
+                            </li>
+                            <li><span class="caret">ENGLISH LAB</span>
+                                <ul class="nested">
+                                    <li>
+                                        <P>BLOCK FLOOR ROOM NO:</P>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><span class="caret">MATHS</span>
+                        <ul class="nested">
+                            <li><span class="caret">Teachers</span>
+                                <ul class="nested">
+                                    <li>T1(name) (Staff Room no Block and Floor no) </li>
+                                    <li>T2(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T3(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T4(name) (Staff Room no Block and Floor no)</li>
+                            </li>
+                            </ul>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="bg-1"></div>
+    <div class="bg-2"></div>
+
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function() {
+
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
+</body>
+
+</html>

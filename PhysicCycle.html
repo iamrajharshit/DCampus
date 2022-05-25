@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+    <div class="glass">
+        <h1> PHYSIC CYCLE</h1>
+        <ul id="myUL">
+            <li><span class="caret">Departments</span>
+                <ul class="nested">
+                    <li><span class="caret">BEE</span>
+                        <ul class="nested">
+                            <li><span class="caret">Teachers</span>
+                                <ul class="nested">
+                                    <li>T1(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T2(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T3(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T4(name) (Staff Room no Block and Floor no)</li>
+                                </ul>
+                            </li>
+                            <li><span class="caret">BEE LAB</span>
+                                <ul class="nested">
+                                    <li>
+                                        <P>BLOCK FLOOR ROOM NO:</P>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><span class="caret">PHYS</span>
+                        <ul class="nested">
+                            <li><span class="caret">Teachers</span>
+                                <ul class="nested">
+                                    <li>T1(name) (Staff Room no Block and Floor no) </li>
+                                    <li>T2(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T3(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T4(name) (Staff Room no Block and Floor no)</li>
+                            </li>
+                            </ul>
+                            <li><span class="caret">PHY LAB</span>
+                                <ul class="nested">
+                                    <li>
+                                        <P>BLOCK FLOOR ROOM NO:</P>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="caret">MECH</span>
+                        <ul class="nested">
+                            <li><span class="caret">Teachers</span>
+                                <ul class="nested">
+                                    <li>T1(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T2(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T3(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T4(name) (Staff Room no Block and Floor no)</li>
+                            </li>
+                            </ul>
+                            <li><span class="caret">MECH LAB</span>
+                                <ul class="nested">
+                                    <li>
+                                        <P>BLOCK FLOOR ROOM NO:</P>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="caret">CIVIL</span>
+                        <ul class="nested">
+                            <li><span class="caret">Teachers</span>
+                                <ul class="nested">
+                                    <li>T1(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T2(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T3(name) (Staff Room no Block and Floor no)</li>
+                                    <li>T4(name) (Staff Room no Block and Floor no)</li>
+                            </li>
+                            </ul>
+                            <li><span class="caret">CIVIL LAB</span>
+                                <ul class="nested">
+                                    <li>
+                                        <P>BLOCK FLOOR ROOM NO:</P>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-1"></div>
+    <div class="bg-2"></div>
+
+
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function() {
+
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
+</body>
+
+</html>

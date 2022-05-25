@@ -1,0 +1,116 @@
+    body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        font-size: 15px;
+        color: #cecece;
+        background-color: rgb(1, 31, 43);
+        padding: 40px 0;
+        height: 100vh;
+    }
+    
+    ul li a:hover,
+    .active {
+        color: #ffffff;
+    }
+    
+    .caret {
+        width: 90%;
+        margin: 4px;
+        height: calc(100vh - 80px);
+        border-radius: 10px;
+        background: rgba(31, 60, 70, 0.6);
+        backdrop-filter: blur(20px);
+        position: relative;
+        z-index: 4;
+    }
+    
+    .caret {
+        border: 10px;
+        padding: 0.2px;
+        background-color: #d42d65;
+        border-radius: 2px;
+        outline: 4px solid rgba(23, 44, 51, 0.6);
+        transition: all .2s ease;
+    }
+    
+    ul,
+    #myUL {
+        list-style-type: none;
+    }
+    /* Remove margins and padding from the parent ul */
+    
+    #myUL {
+        margin: 0;
+        padding: 0;
+    }
+    /* Style the caret/arrow */
+    
+    .caret {
+        cursor: pointer;
+        user-select: none;
+        /* Prevent text selection */
+    }
+    /* Create the caret/arrow with a unicode, and style it */
+    
+    .caret::before {
+        content: "\25B6";
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        margin-right: 6px;
+    }
+    /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+    
+    .caret-down::before {
+        transform: rotate(90deg);
+    }
+    /* Hide the nested list */
+    
+    .nested {
+        display: none;
+    }
+    /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+    
+    .active {
+        display: block;
+    }
+    
+    .caret:hover,
+    .caret:focus {
+        outline: 2px solid rgba(255, 217, 0, 0.6);
+        outline-offset: 0px;
+    }
+    
+    .bg-1,
+    .bg-2 {
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient( 112deg, rgba(169, 28, 115, 1) 21%, rgb(241, 92, 11) 93%);
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .glass {
+        width: auto;
+        margin: 0 auto;
+        height: 1080px;
+        border-radius: 10px;
+        background: rgba(31, 60, 70, 0.6);
+        backdrop-filter: blur(20px);
+        position: relative;
+        z-index: 4;
+    }
+    
+    .bg-1 {
+        top: 10%;
+        left: 5.5%;
+        border-radius: 20px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 50px;
+    }
+    
+    .bg-2 {
+        bottom: 7%;
+        right: 5.5%;
+        border-radius: 50%;
+    }
